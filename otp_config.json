@@ -407,6 +407,30 @@
             "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
             "x-auth": "Bearer 63cb746000e1f88adaede0b65928daecac1914832d5fb20538209a76ae1754ea"
         }
+    },
+    {
+        "name": "Kickavenue_Register",
+        "method": "post",
+        "url": "https://api.kickavenue.com/registers",
+        "data": "{\"email\": \"yoshwdd@gmail.com\", \"mobile_number\": \"target_number\", \"password\": \"+-Kocak4456\", \"password_confirmation\": \"+-Kocak4456\"}",
+        "headers": {
+            "Host": "api.kickavenue.com",
+            "accept": "application/json, text/plain, */*",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "en-US,en;q=0.9",
+            "content-length": "125",
+            "content-type": "application/json",
+            "origin": "https://www.kickavenue.com",
+            "referer": "https://www.kickavenue.com/",
+            "sec-ch-ua": "\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\"",
+            "sec-fetch-dest": "empty",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-site": "same-site",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+        }
     }
+    
  
 ]
