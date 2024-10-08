@@ -462,7 +462,7 @@
     "name": "Blibli OTP",
     "method": "post",
     "url": "https://account.bliblitiket.com/gateway/gks-unm-go-be/api/v1/otp/generate",
-    "data": "{\"action\": \"REGISTER_OTP\", \"channel\": \"WHATS_APP\", \"recipient\": \"+6288226772171\", \"recaptchaToken\": \"\"}",
+    "data": "{\"action\": \"REGISTER_OTP\", \"channel\": \"WHATS_APP\", \"recipient\": \"target_number\", \"recaptchaToken\": \"\"}",
     "headers": {
         "accept": "*/*",
         "accept-encoding": "gzip, deflate, br, zstd",
