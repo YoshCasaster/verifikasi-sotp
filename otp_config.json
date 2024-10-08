@@ -430,7 +430,90 @@
             "sec-fetch-site": "same-site",
             "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
         }
+    },
+{
+    "name": "Evermos",
+    "method": "post",
+    "url": "https://evermos.com/int-client/v3/user-verification/phone-registration",
+    "data": "{\"phone\": \"target_number\"}",
+    "headers": {
+        "Host": "evermos.com",
+        "accept": "application/json, text/plain, */*",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "en-US,en;q=0.9,id;q=0.8",
+        "authorization": "Bearer aafdd42b55bea10f88d54492ea2d9e277af91f65",
+        "client-device": "web_desktop",
+        "content-length": "25",
+        "content-type": "application/json",
+        "cookie": "_ga=GA1.1.1724301917.1728379978; sbjs_migrations=1418474375998%3D1; sbjs_current_add=fd%3D2024-10-08%2009%3A33%3A03%7C%7C%7Cep%3Dhttps%3A%2F%2Fevermos.com%2Fhome%2F%3Freferrer%3Dgoogle%7C%7C%7Crf%3Dhttps%3A%2F%2Fevermos.com%2Fhome%2F; _gcl_au=1.1.1458535283.1728379984",
+        "origin": "https://evermos.com",
+        "referer": "https://evermos.com/registration/otp?register_source=seo_homepage&register_medium=menu&register_campaign=bau-campaign_homepage-menu_02102024_seo&register_content=landing-page_revamp-homepage&referrer=google",
+        "sec-ch-ua": "\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+        "x-forwarded-for": "8.215.39.177"
     }
-    
- 
+},
+{
+    "name": "BlibliTiket",
+    "method": "post",
+    "url": "https://account.bliblitiket.com/gateway/gks-unm-go-be/api/v1/otp/generate",
+    "data": {
+        "action": "REGISTER_OTP",
+        "channel": "WHATS_APP",
+        "recipient": "+6288226772171",  // Ganti dengan target number
+        "recaptchaToken": ""
+    },
+    "headers": {
+        "Host": "account.bliblitiket.com",
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "en-US,en;q=0.9,id;q=0.8",
+        "content-length": "96",
+        "content-type": "application/json; charset=UTF-8",
+        "cookie": "entity=tiket; unm_device_id=7c93f7eb-7065-4ef6-ab77-2d2472156d34; _ga=GA1.1.636102136.1728045509; device_id=7c93f7eb-7065-4ef6-ab77-2d2472156d34; userlang=id; _tix_logger_correlation_id=e341f4f3-8c57-43e4-a646-812e1727047e; __cf_bm=bMTjx.jZe9IIrNLzgSij7.m666qQaBjLn4UgJGKYGDw-1728380277-1.0.1.1-tERhWcAds2EyrBry7RVgr3Pith1cpeIwCWFYhj4CqHf4iWaoMeGl6wwStbu2ZIRAb4c2ZxrMJV5zagWiojGwEw; _cfuvid=xIjDx783FO_k4dbquV1WDr3ksuWdi40CN3LIHLj7XTU-1728380277846-0.0.1.1-604800000; cf_clearance=tMMnlQu5jZycbqi_VnoS5Dsd2UceHEcpqbjriE1tAOk-1728380278-1.2.1.1-o2xCXnQWX9F0TP5gSKCH4A_1cMKRP7kNvO8fxAQZcx8ZEN158sxT7o1ohDzfh5js4pnoxYQqVC23Zjw9_Lgm849L9OOf7HiKNTZ1HomHdXA_D.b9UMda6H_RaZIDqh2DTsn9M5Ue9Iv0MaUPJcxxKPB5zGXUqDysF74r1riY5Y3aXou0F48zbhaArwjxE1XfqqE0q.fajnVKtvkK8O1t7CLdMfgRrhRYzFD2W_LWcCdIjkX3z9IY_5qWQAlJgHbtT2iJSolMKj3B8kFA85k4OdCinDU9OqAS_Bdw2_H.N1p6ZZe_jJbC1drnEKDSwNQR5tOTyWm1A3.gLTGNsA_bs89zaHKJXeECuaCVwuKCP4_S0ADhBEehFOkejGyR1JmcYIy1j1FuZ3z.Nz2aONzfvod1Wg3I9r6_rKr3P._NNwebT7EEBFPKfmQWqucOb18v",
+        "origin": "https://account.bliblitiket.com",
+        "referer": "https://account.bliblitiket.com/register?ref=https%3A%2F%2Fwww.tiket.com%2Fpesawat...",
+        "sec-ch-ua": "\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+        "x-channel-id": "MOBILE",
+        "x-entity": "TIKET",
+        "x-lang": "id",
+        "x-request-id": "0f073f49-5b9f-414c-a359-97a2c1f83ec3"
+    }
+},
+{
+    "name": "Blibli OTP",
+    "method": "post",
+    "url": "https://account.bliblitiket.com/gateway/gks-unm-go-be/api/v1/otp/generate",
+    "data": "{\"action\": \"REGISTER_OTP\", \"channel\": \"WHATS_APP\", \"recipient\": \"+6288226772171\", \"recaptchaToken\": \"\"}",
+    "headers": {
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "en-US,en;q=0.9,id;q=0.8",
+        "content-length": "96",
+        "content-type": "text/plain;charset=UTF-8",
+        "cookie": "entity=tiket; unm_device_id=7c93f7eb-7065-4ef6-ab77-2d2472156d34; _ga=GA1.1.636102136.1728045509; device_id=7c93f7eb-7065-4ef6-ab77-2d2472156d34; userlang=id; _tix_logger_correlation_id=e341f4f3-8c57-43e4-a646-812e1727047e; _cfuvid=xIjDx783FO_k4dbquV1WDr3ksuWdi40CN3LIHLj7XTU-1728381198-1.0.1.1-HWEXWsVHKU_2Jlodkh7CSFRZ_XFJvPT9hsdz.ol15C77K1nKF_uGzceAqY.KA2ot9AIsB2Pbq3zSan9JP.JCgA",
+        "origin": "https://account.bliblitiket.com",
+        "referer": "https://account.bliblitiket.com/register?ref=https%3A%2F%2Fwww.tiket.com%2Fpesawat%3Faf_xp%3Dcustom%26source_caller%3Dui%26pid%3Dpublisher_display%26is_retargeting%3Dtrue%26af_click_lookback%3D7d%26shortlink%3D96e5as90%26deep_link_value%3Dhttps%253A%252F%252Fwww.tiket.com%252Fpesawat%253Futm_source%253Dmo-displayron%2526utm_medium%253Dbrn-01-cpc%2526utm_campaign%253Dbrn-transport-allpromo-traffic%2526utm_content%253Dbrn-transport-allpromo-static%26af_reengagement_window%3D30d%26c%3Dbrn-transport-allpromo-traffic-displayron%26utm_source%3Dgoogle%26utm_medium%3Dprf-ppc%26utm_campaign%3D%255BGDN-PMAX%255D%2520-%2520MTU%26gad_source%3D1%26gclid%3DCj0KCQjwsJO4BhDoARIsADDv4vD80cIzuh7yJiaPEpl-9r2f1RN_6c3daqTgEpEMy2O2_G6WrdqoAf4aAjAhEALw_wcB&clientId=9dc79e3916a042abc86c2aa525bff009&device_id=7c93f7eb-7065-4ef6-ab77-2d2472156d34&lang=id&utm_section=navigationBar%3Bregister_label&utm_logic=none",
+        "sec-ch-ua": "\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.90 Safari/537.36"
+    }
+}
+
+
 ]
