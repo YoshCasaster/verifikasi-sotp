@@ -480,7 +480,34 @@
         "sec-fetch-site": "same-origin",
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.90 Safari/537.36"
     }
+},
+{
+    "name": "Desty",
+    "method": "post",
+    "url": "https://omni.desty.app/api/admin/desty/captcha",
+    "data": "{\"phoneNum\": \"target_number\",\"reCaptchaCode\": \" 03AFcWeA4-4v9n-deANaYHpmf93XGHBhsdn_K-6863cUIG6K80oX3YCUpJm-1AcdsEYg2HDUJ5cEeBABxDRwQZrjBl5htMOa9CJVdwupuRdZYUVjvKxcz0BwCKzru307PRUlYNcEk612LO8AKAQWLp4ELHTalKND76dVWwiyFXbMGeh99uDblpMQEj7jjeWlCwuudtWudbsCldlYSpAe7YsUZrA4ypuEvUKVFI8QS7OjWjmyRftcd-2UoRAUA9MC2pUafAmcCihWYWhfgcybyiHaBXN9eE2XrezgCyf3HQmlZuy8lrRrq2GEWhUWBW5S4x9pw2OgVFab4-dL1mqeqbiano3F9hzPrIk7cHPjDfXH9CwHfeJyvLAMa2d2TRpf-W8rfZKopoqOGZuQsHL2Muz4wPJB6tyyWk-hRHjoYHc6_5RnwTDJMPnCQ8gxo6OKjVxdGJ-kjar-NM_ib7-AC0kpqKlWOr4vNce5paXboOhFbEXIuoh_g0yz_j7cShv_t1uuZnR9ISp74qQcP-_zSyMiEdYQPPg0ax1fUDAmZZmk2Z9QYeyF1UfMu0xNEKBKgv871LVH-Z5wi1BspfiAvBEIsu5cQhdDJdmctRIdbQYBTEJBJozZfDrzq05CGrb2b1E4eRY1g34WdKOegY6k7rl2IfULJGxWMYawXnoEhKDxkRkxm4dpP0OUsAZMOjqZqwsqXfl6mb15uMK1CM-1Sy-CowwMYsuJWoXbPeWw3VQ8QN0Potzf6SneirMboQNDQG2GNNxidVFKzQYilo6z9LB3Lp0h0mjQmbnPV1t96GfYaSgmN42QKT7AbNbsE-arYV86kEAK1wfDuVP_sruV6TWG4fiO1CElCP6nMmHgQm8zYEA6WSbbh7Y-UTSjo85QdMZKCK3_VuaDN1c4OIyoOM5JpyJeqfEo7s-IdaoGEOJ_GENfZnCQK-b4x7UjMqNqEXdukIFa_L0iUP5Y3xczZPqVUUYMYjf1BwU_CpwRgQ92-ObTzFWt2ixl65Vo5V_UiK2cQhsS8xPcCzpqnVh4RFohCkHq-wzFaiViEy62UoWcUXylgiHtZDt9h-3xAv_KdO1ptkV3ePTLGvPm1xKVxDw1lWULY_7kgLR2I7kO_HYi9XlaohUnEkSNPGI8HeYQLyDmI0GxDzQZdJ-FQmfO_HJcbuz5CDjJ0eo-PDZu9uOn6FdQiIhMid5ZF5Z5UhmyBq7PZvxZ3kJP9e_bCCwkRNVJ1CpTScC2HKS1NRtvUpgOvrbQZPC8vVOHeHiXpQJduqZBuPHlOqSVWhDvOUn9sjxXei-Zrsr4vylryN6m0Nen4Ds2nKn61Ft0LG8kDg5G8tvRuTna3m3jJ0YkqGDenRus9Ac-ecVp1KcFcv0omrSUNfgqTM486rPrn8cod4QWVmS7sIK7HEBQJ1NdBffzCWFDE73qrLt8jh7npIwuDS5SaonIIbiq5WcTgH2CWDnhKMrMiR8QwdhNe46DUnN1pmLzNtJO-it0JnQIrAYzb0dQlhl7YEzJaWgH3AXzJBsmLw7JCsaZk1alxygKe6xVUyRcU6KqObXWzPswbXLeYa7Lzk8UdGGpM4eODHwr1G8PR-jMnJBEPxaZ-NNLkBitntf0CtV-_i5-T9gii2hB9SlcWAY8nDuwd-vI4WeF_7778Ol22ZAxgfr2K4Cj19uXJqAgOBBzkKWPGXHGmgcXjGupOkRtk5Pe2JWGVaVBG8gBuNQ_f5tHJgxr3lRHiITme-pSZO8D7QWnRCxd8DpoB6IgIV0eDwHUDe-TeQ5Grphh1E1QjCqGyd8SfY2MyQrpbH_JHn-2Ca3AT3_D9lN1Qfvt6MoebMtygByAcUdzjUpDhKRIeqCByBOtOpDOSha-YExohFubBkd2PjTvKDtrpINC91UkgiOpecQNRisJd38wqE0FYqZk2CDeKAGFvHIP1WFiXXNvXjcG8qBY82wy9SVzEHIQDH7CRguIzvnkev6Jns2MImRN3PzgdXkBfNp9fwJWksw2u52n1zcwkt0FcKc87_ZIeOXU9Mocp7dFUg5giRh9YjgNwnzVrX5pajXM0q512dA7FcUudlrWpT4yfcGpgYc6-uiwoQKpMYp6sjfzG8Jump_I8wTdgttk0i6gnqbB7k95PW4jiAShZJjjhfd7tmFoCCa_YZKLVFxg97B9AMbKus1bOUvzNwRLKDNEQNnZFbSO2iIlxbRk2Kh5fqDxlKkarqnsQynR4\"}",
+    "headers": {
+        "Host": "omni.desty.app",
+        "accept": "application/json, text/plain, */*",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "idn;q=0.9",
+        "authorization": "",  
+        "content-length": "2281",
+        "content-type": "application/json",
+        "cookie": "acw_tc=0b37b07617285345019721086e00f6e0147641bbfa29ff7460777a58ef044d; _gcl_au=1.1.1063762563.1728534508; _ga=GA1.1.58081788.1728534508; _ga_YCWK7WPPVB=GS1.1.1728534508.1.1.1728534546.22.0.0",
+        "locale": "idn",
+        "origin": "https://omni.desty.app",
+        "referer": "https://omni.desty.app/register",
+        "sec-ch-ua": "\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+    }
 }
+
 
 
 ]
