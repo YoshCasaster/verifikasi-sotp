@@ -506,5 +506,80 @@
         "sec-fetch-site": "same-origin",
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
     }
+},
+{
+    "name": "XCashShop",
+    "method": "POST",
+    "url": "https://xc-api.xcashshop.com/auth/register",
+    "data": "{\"firstName\": \"YosepWWhay\", \"lastName\": \"Danuarta\", \"phoneNumber\": \"088226772171\", \"password\": \"Ytta4456\", \"confirmPassword\": \"Ytta4456\"}",
+    "headers": {
+        "authority": "xc-api.xcashshop.com",
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "en-US,en;q=0.9,nl-BE;q=0.8,nl;q=0.7",
+        "content-type": "application/json",
+        "origin": "https://xcashshop.com",
+        "referer": "https://xcashshop.com/",
+        "sec-ch-ua": "\"Chromium\";v=\"130\", \"Microsoft Edge\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+        "sec-ch-ua-mobile": "?1",
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-site",
+        "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36 Edg/130.0.0.0"
+    }
+},
+{
+    "name": "GameStoreIndonesia",
+    "method": "post",
+    "url": "https://gamestoreindonesia.com/api/v1/auth/register",
+    "data": "{\"firstName\": \"YosepwWahyu\", \"lastName\": \"Danuarta\", \"phoneNumber\": \"088226772171\", \"password\": \"Adaaja+9909\", \"confirmPassword\": \"Adaaja+9909\"}",
+    "headers": {
+        "authority": "gamestoreindonesia.com",
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "en-US,en;q=0.9,nl-BE;q=0.8,nl;q=0.7",
+        "content-type": "application/json",
+        "cookie": "i18next=id; _ga=GA1.1.336848969.1730437355; _fbp=fb.1.1730437356111.843270166927744072; _ga_ZY457EN41F=GS1.1.1730437355.1.1.1730437469.55.0.0",
+        "origin": "https://gamestoreindonesia.com",
+        "referer": "https://gamestoreindonesia.com/auth/register",
+        "sec-ch-ua": "\"Chromium\";v=\"130\", \"Microsoft Edge\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+        "sec-ch-ua-mobile": "?1",
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
+        "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36 Edg/130.0.0.0",
+        "x-captcha-token": "03AFcWeA4Q6I9RaMB-OhycXCocIIklV6nTXrVh9IrZdxJ1mb8vNP_E3WCRL60cj8d3Awi81WXf_gvDEvtrdlx69dfugt6Y3apiNWnO7CriDTCEkvWHaCKDS4W_q8-kglOTf7mTnO1RR5ioBKbMAwqWCyY0phM2cbbM1qb9X2y-dSXhKe0ZcrWHXTdVcUQg8cN8VwJOkMpdq5_BPerUrZQsEBCfJpnbCkyScPP0Hj-QQ_HzdhM5i4GVzUqgUl85WVW-Qlh-RD24g3NceY-V6yGsr1C03OHyxmXx6gTrdlhIkcmAEoOJAcqSfrNrT7PsBwIiTBxDKtSHcqVkMLwQW-F4m9m2-R4PtPf707v_h8mraH7p0xhVH3V-7nlKWyy7kvBzK41C5e9cDbAFFFvZj0UytUmn3oZ2AGfmwkdPaedueHhK-Yu4jzNPKK5Y8qC1G_3CeRs_eJSKlueeWU0QF7kffgEMe2VVYCKu2KjybjHdjStVycidyJtVkWaOJnqR_OPv49A6I-DR_NzUdG83Z8d3JyzU9m6kJe2huoOOwU8boYQR2N8H5p2Tmd_yPiKaWA9v9KySbqN_My7M2GOhJ2Xb0vBKIA2Pd3jUXSacQRCFDG4foEsUpKtNFYtAcjuvYXFS_02N7SQLIeeO2BLFRlQB89Ir6Ez3UMyJ4NKc38xMUthKqsemK5W1Yos5PELw9PJoB6kfZC3UKauxunt20nU2baajip_HTAukghvjj1V20oZaHtoo3uCk7dxsbDSW7VtsFqei72m5lTcluu8i0UrAoQFCPxugySUd2pYvEI4rnEY84lOT-_0LJdn8xex2NieW-p4n1anpTd7HqOOmKZyuKeKmlX4dxEnDyA",
+        "x-client": "web-mobile",
+        "x-request-id": "5b067260-c8d7-45c6-94c7-50498b4a26d9",
+        "x-timestamp": "1730438578801"
+    }
+},
+{
+    "name": "DodolanKuota",
+    "method": "POST",
+    "url": "https://dodolankuota.com/user/register",
+    "data": "{\"csrf_token\": \"43cdae0204a40cc10b5d3a4bd7bd9e2b\", \"user_username\": \"YoshCassasterr\", \"user_phone\": \"088226772171\", \"user_email\": \"meyoshok001@gmail.com\", \"user_password\": \"Kockjasdkn*(\", \"user_confirm_password\": \"Kockjasdkn*(\", \"tos\": \"1\", \"submit\": \"signup\"}",
+    "headers": {
+        "authority": "dodolankuota.com",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "en-US,en;q=0.9,nl-BE;q=0.8,nl;q=0.7",
+        "cache-control": "max-age=0",
+        "content-type": "application/x-www-form-urlencoded",
+        "cookie": "csrf_cookie=43cdae0204a40cc10b5d3a4bd7bd9e2b; sid=62cc136632ae5f25ac631a64c43625e8ed4b4d3a",
+        "origin": "https://dodolankuota.com",
+        "referer": "https://dodolankuota.com/user/register",
+        "sec-ch-ua": "\"Chromium\";v=\"130\", \"Microsoft Edge\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+        "sec-ch-ua-mobile": "?1",
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-fetch-dest": "document",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-user": "?1",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36 Edg/130.0.0.0"
+    }
 }
 ]
