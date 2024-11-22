@@ -511,7 +511,7 @@
     "name": "XCashShop",
     "method": "POST",
     "url": "https://xc-api.xcashshop.com/auth/register",
-    "data": "{\"firstName\": \"YosepWWhay\", \"lastName\": \"Danuarta\", \"phoneNumber\": \"088226772171\", \"password\": \"Ytta4456\", \"confirmPassword\": \"Ytta4456\"}",
+    "data": "{\"firstName\": \"YosepWWhay\", \"lastName\": \"Danuarta\", \"phoneNumber\": \"target_number\", \"password\": \"Ytta4456\", \"confirmPassword\": \"Ytta4456\"}",
     "headers": {
         "authority": "xc-api.xcashshop.com",
         "accept": "*/*",
@@ -533,7 +533,7 @@
     "name": "GameStoreIndonesia",
     "method": "post",
     "url": "https://gamestoreindonesia.com/api/v1/auth/register",
-    "data": "{\"firstName\": \"YosepwWahyu\", \"lastName\": \"Danuarta\", \"phoneNumber\": \"088226772171\", \"password\": \"Adaaja+9909\", \"confirmPassword\": \"Adaaja+9909\"}",
+    "data": "{\"firstName\": \"YosepwWahyu\", \"lastName\": \"Danuarta\", \"phoneNumber\": \"target_number\", \"password\": \"Adaaja+9909\", \"confirmPassword\": \"Adaaja+9909\"}",
     "headers": {
         "authority": "gamestoreindonesia.com",
         "accept": "*/*",
@@ -560,7 +560,7 @@
     "name": "DodolanKuota",
     "method": "POST",
     "url": "https://dodolankuota.com/user/register",
-    "data": "{\"csrf_token\": \"43cdae0204a40cc10b5d3a4bd7bd9e2b\", \"user_username\": \"YoshCassasterr\", \"user_phone\": \"088226772171\", \"user_email\": \"meyoshok001@gmail.com\", \"user_password\": \"Kockjasdkn*(\", \"user_confirm_password\": \"Kockjasdkn*(\", \"tos\": \"1\", \"submit\": \"signup\"}",
+    "data": "{\"csrf_token\": \"43cdae0204a40cc10b5d3a4bd7bd9e2b\", \"user_username\": \"YoshCassasterr\", \"user_phone\": \"target_number\", \"user_email\": \"meyoshok001@gmail.com\", \"user_password\": \"Kockjasdkn*(\", \"user_confirm_password\": \"Kockjasdkn*(\", \"tos\": \"1\", \"submit\": \"signup\"}",
     "headers": {
         "authority": "dodolankuota.com",
         "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
