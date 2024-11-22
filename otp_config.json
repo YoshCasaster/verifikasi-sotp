@@ -511,22 +511,16 @@
     "name": "XCashShop",
     "method": "POST",
     "url": "https://xc-api.xcashshop.com/auth/register",
-    "data": "{\"firstName\": \"YosepWWhay\", \"lastName\": \"Danuarta\", \"phoneNumber\": \"target_number\", \"password\": \"Ytta4456\", \"confirmPassword\": \"Ytta4456\"}",
+    "data": "{\"firstName\": \"sfds\", \"lastName\": \"sfetty\", \"phoneNumber\": \"target_number\", \"password\": \"halahKocak009\", \"confirmPassword\": \"halahKocak009\"}",
     "headers": {
-        "authority": "xc-api.xcashshop.com",
         "accept": "*/*",
         "accept-encoding": "gzip, deflate, br, zstd",
         "accept-language": "en-US,en;q=0.9,nl-BE;q=0.8,nl;q=0.7",
+        "content-length": "130",
         "content-type": "application/json",
         "origin": "https://xcashshop.com",
         "referer": "https://xcashshop.com/",
-        "sec-ch-ua": "\"Chromium\";v=\"130\", \"Microsoft Edge\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-        "sec-ch-ua-mobile": "?1",
-        "sec-ch-ua-platform": "\"Android\"",
-        "sec-fetch-dest": "empty",
-        "sec-fetch-mode": "cors",
-        "sec-fetch-site": "same-site",
-        "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36 Edg/130.0.0.0"
+        "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36 Edg/131.0.0.0"
     }
 },
 {

